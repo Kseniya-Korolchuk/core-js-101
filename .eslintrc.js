@@ -6,7 +6,7 @@ module.exports = {
     mocha: true,
   },
   extends: [
-   //'airbnb-base',
+   'airbnb-base',
   ],
   globals: {
     Atomics: 'readonly',

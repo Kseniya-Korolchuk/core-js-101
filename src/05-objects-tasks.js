@@ -116,7 +116,7 @@ function fromJSON(proto, json) {
  *  For more examples see unit tests.
  */
 
-class cssSelector {
+class CssSelector {
   constructor() {
     this.cssElem = '';
     this.cssClass = '';
@@ -205,31 +205,31 @@ class cssSelector {
 
 const cssSelectorBuilder = {
   element(value) {
-    return new cssSelector().element(value);
+    return new CssSelector().element(value);
   },
 
   id(value) {
-    return new cssSelector().id(value);
+    return new CssSelector().id(value);
   },
 
   class(value) {
-    return new cssSelector().class(value);
+    return new CssSelector().class(value);
   },
 
   attr(value) {
-    return new cssSelector().attr(value);
+    return new CssSelector().attr(value);
   },
 
   pseudoClass(value) {
-    return new cssSelector().pseudoClass(value);
+    return new CssSelector().pseudoClass(value);
   },
 
   pseudoElement(value) {
-    return new cssSelector().pseudoElement(value);
+    return new CssSelector().pseudoElement(value);
   },
 
   combine(selector1, combinator, selector2) {
-    return new cssSelector().combine(selector1, combinator, selector2);
+    return new CssSelector().combine(selector1, combinator, selector2);
   },
 
   stringify() {
